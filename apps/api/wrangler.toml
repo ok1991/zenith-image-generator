@@ -1,0 +1,6 @@
+name = "z-image-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+# Add environment variables here if needed
