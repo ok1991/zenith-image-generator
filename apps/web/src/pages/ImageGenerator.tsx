@@ -32,7 +32,6 @@ import {
   Settings,
   Loader2,
   RotateCcw,
-  Zap,
   Info,
   Trash2,
   Eye,
@@ -130,9 +129,7 @@ export default function ImageGenerator() {
     () => loadSettings().selectedRatio ?? "1:1"
   );
   const [uhd, setUhd] = useState(() => loadSettings().uhd ?? false);
-  const [upscale8k, setUpscale8k] = useState(
-    () => loadSettings().upscale8k ?? false
-  );
+  const [upscale8k] = useState(() => loadSettings().upscale8k ?? false);
   const [showInfo, setShowInfo] = useState(false);
   const [isBlurred, setIsBlurred] = useState(false);
   const [isUpscaled, setIsUpscaled] = useState(false);
